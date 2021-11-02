@@ -21,12 +21,13 @@ namespace FirstStepsInObjectProgrammingInCHash
             Person User2 = new Person();
             User2.name = "Maciek";
             User2.surname = "ZKlanu";
-            User2.gender = "Male?";
+            User2.gender = "Męczyzna";
             User2.age = 38;
             User2.hobby = "Miłość";
             User2.job = "Aktor / Somelier / Wokalista / Multiinstrumentalista";
 
-
+            User1.Introduction();
+            User2.Introduction();
 
             Console.ReadKey();
         }
@@ -43,8 +44,9 @@ namespace FirstStepsInObjectProgrammingInCHash
             public void Introduction()
             {
                 Console.WriteLine($"Mam na imie {name}, a na nazwisko {surname}.");
-                Console.WriteLine($"Jestem osobnikiem płci {gender} i mam {age} lat.");
-                Console.WriteLine($"Zawodowo zajmuję się {job}, a w wolnym czasie lubię spędzać czas nad: {hobby}, bo to moje hobby ;).");
+                Console.WriteLine($"Moja oficialna płeć to {gender} i mam {age} lat.");
+                Console.WriteLine($"Mój zawód to {job},\na w wolnym czasie lubię spędzać czas nad: {hobby}, bo to moje hobby ;).");
+                Console.WriteLine(); Console.WriteLine();
             }
         }
 
