@@ -26,6 +26,8 @@ namespace FirstStepsInObjectProgrammingInCHash
             User2.hobby = "Miłość";
             User2.job = "Aktor / Somelier / Wokalista / Multiinstrumentalista";
 
+
+
             Console.ReadKey();
         }
 
@@ -37,6 +39,14 @@ namespace FirstStepsInObjectProgrammingInCHash
             public int age;
             public string hobby;
             public string job;
+
+            public void Introduction()
+            {
+                Console.WriteLine($"Mam na imie {name}, a na nazwisko {surname}.");
+                Console.WriteLine($"Jestem osobnikiem płci {gender} i mam {age} lat.");
+                Console.WriteLine($"Zawodowo zajmuję się {job}, a w wolnym czasie lubię spędzać czas nad: {hobby}, bo to moje hobby ;).");
+            }
         }
+
     }
 }
