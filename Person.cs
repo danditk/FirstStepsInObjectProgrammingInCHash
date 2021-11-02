@@ -8,6 +8,11 @@ namespace FirstStepsInObjectProgrammingInCHash
 {
     class Person
     {
+
+        public Person()
+        {
+        }
+
         public Person(string constructorName)
         {
             //TODO
@@ -15,13 +20,18 @@ namespace FirstStepsInObjectProgrammingInCHash
             Console.WriteLine($"I AM {name}, and I AM CONSTRUCTOR");
             Console.WriteLine();
         }
+        public Person(string constructorName, string constructorSurname)
+        {
+            name = constructorName;
+            surname = constructorSurname;
+        }
 
-        public string name;
-        public string surname;
-        public string gender;
-        public int age;
-        public string hobby;
-        public string job;
+        public string name = "N";
+        public string surname = "N";
+        public string gender = "Nieokreślono";
+        public int age = 999;
+        public string hobby = "Brak";
+        public string job = "Bezrobotny";
 
         public void Introduction()
         {
