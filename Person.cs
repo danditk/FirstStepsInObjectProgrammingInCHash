@@ -29,9 +29,29 @@ namespace FirstStepsInObjectProgrammingInCHash
         public string name = "N";
         public string surname = "N";
         public string gender = "Nieokreślono";
-        public int age = 999;
         public string hobby = "Brak";
         public string job = "Bezrobotny";
+
+        private int age;
+
+        public int AgeProperty
+        {
+            get { return age; }
+
+            set
+            {
+                if (value >= 0 && value <= 200)
+                {
+                    age = value;
+                }
+                else
+                {
+                    age = 0;
+                }
+
+            }
+        }
+
 
         public void Introduction()
         {
