@@ -8,6 +8,10 @@ namespace FirstStepsInObjectProgrammingInCHash
 {
     class Person
     {
+        public Person()
+        {
+
+        }
         
         public Person(string constructorName)
         {
@@ -19,6 +23,15 @@ namespace FirstStepsInObjectProgrammingInCHash
         {
             name = constructorName;
             surname = constructorSurname;
+        }
+
+        public Person(string constructorName, string constructorSurname, string consGender, string consHobby, int consAge)
+        {
+            name = constructorName;
+            surname = constructorSurname;
+            gender = consGender;
+            hobby = consHobby;
+            age = consAge;
         }
 
         public string name = "N";

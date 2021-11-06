@@ -16,7 +16,17 @@ namespace FirstStepsInObjectProgrammingInCHash
             
             Console.WriteLine("Jestem {0} i mam {1} lat", man.getName(), man.getAge());
 
-            Person[] tabPersons = new Person[6];
+            Person[] tabPersonsV1 = new Person[6];
+
+            Person[] tabPersonsV2 =
+            {
+                new Person("Phil", "Konieczny", "male", "Crypto", 33),
+                new Person("Maciek", "Wiśniewski"),
+                new Person("Agatka"),
+                new Person("Adam"),
+                new Person("Ewa"),
+                new Person(),
+            };
 
             Person User1 = new Person("Phil");
             //User1.name = "Phil";
@@ -51,18 +61,23 @@ namespace FirstStepsInObjectProgrammingInCHash
             User6.AgeProperty = 250;
 
 
-            tabPersons[0] = User1;
-            tabPersons[1] = User2;
-            tabPersons[2] = User3;
-            tabPersons[3] = User4;
-            tabPersons[4] = User5;
-            tabPersons[5] = User6;
+            tabPersonsV1[0] = User1;
+            tabPersonsV1[1] = User2;
+            tabPersonsV1[2] = User3;
+            tabPersonsV1[3] = User4;
+            tabPersonsV1[4] = User5;
+            tabPersonsV1[5] = User6;
             //string users 
 
-            foreach (var person in tabPersons)
+            foreach (var person in tabPersonsV2)
             {
                 person.Introduction();
             }
+
+            //foreach (var person in tabPersonsV1)
+            //{
+            //    person.Introduction();
+            //}
 
             //for (int i = 0; i < tabPersons.Length; i++)
             //{
