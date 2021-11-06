@@ -25,7 +25,7 @@ namespace FirstStepsInObjectProgrammingInCHash
             surname = constructorSurname;
         }
 
-        public Person(string constructorName, string constructorSurname, string consGender, string consHobby, int consAge)
+        public Person(string constructorName, string constructorSurname, string consGender = "Nieokreślono", string consHobby = "Brak", int consAge = 0)
         {
             name = constructorName;
             surname = constructorSurname;

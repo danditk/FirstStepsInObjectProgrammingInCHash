@@ -20,8 +20,8 @@ namespace FirstStepsInObjectProgrammingInCHash
 
             Person[] tabPersonsV2 =
             {
-                new Person("Phil", "Konieczny", "male", "Crypto", 33),
-                new Person("Maciek", "Wiśniewski"),
+                new Person("Phil", "Konieczny",  consHobby:"Crypto", consAge: 33),
+                new Person("Maciek", "Wiśniewski", consAge: 99),
                 new Person("Agatka"),
                 new Person("Adam"),
                 new Person("Ewa"),

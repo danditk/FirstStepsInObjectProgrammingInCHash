@@ -10,6 +10,8 @@ namespace FirstStepsInObjectProgrammingInCHash
     {
         private string name;
 
+        // in difrend lenguages for example Jawa we build properties like this:
+
         public string getName()
         {
             return name;
@@ -31,6 +33,10 @@ namespace FirstStepsInObjectProgrammingInCHash
         {
             if (sAge < 0 && sAge > 200) age = sAge;
         }
+
+        // in C# we can build peoperties using internal solutions like this:
+
+
     }
     
 }
