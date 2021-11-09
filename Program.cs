@@ -13,8 +13,10 @@ namespace FirstStepsInObjectProgrammingInCHash
             PropertiesConstructor man = new PropertiesConstructor();
             man.setName("Patrycja");  // = "Patrycja";
             man.setAge(24); // = 43;
+            man.PersonGender = "male";
+            //man.PersonGender = "gość"; = przyjmuje nieprawidłową wartość - nie ma w if więc przyjmuje wartość nieokreślono.
             
-            Console.WriteLine("Jestem {0} i mam {1} lat", man.getName(), man.getAge());
+            Console.WriteLine("Jestem {0} i mam {1} lat, płeć {2}", man.getName(), man.getAge(), man.PersonGender);
 
             Person[] tabPersonsV1 = new Person[6];
 

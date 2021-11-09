@@ -10,7 +10,7 @@ namespace FirstStepsInObjectProgrammingInCHash
     {
         private string name;
 
-        // in difrend lenguages for example Jawa we build properties like this:
+        // in different languages for example Jawa we build properties like this:
 
         public string getName()
         {
@@ -34,8 +34,30 @@ namespace FirstStepsInObjectProgrammingInCHash
             if (sAge < 0 && sAge > 200) age = sAge;
         }
 
-        // in C# we can build peoperties using internal solutions like this:
+        // in C# we can build properties using - Gettery i settery, internal solutions like this:
 
+        // public string gender { get; set; } // () peop and click 2X tab - simple , you can use also only get
+
+        private string gender;
+
+        public string PersonGender
+        {
+            get { return "SEX:" + gender; }
+
+            set
+            {
+                if (value == "male" || value == "female" || value == "kobieta" || value == "mężczyzna" || value == "nie chcę podawać")
+                gender = value;
+
+                else
+                {
+                    gender = "nieokreślono";
+                }
+            }
+            
+        }
+
+        //public string gender { get; set; } // peopfull and click 2X tab - full property witch you can add some conditions
 
     }
     
